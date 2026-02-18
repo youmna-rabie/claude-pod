@@ -2,4 +2,7 @@ module github.com/youmna-rabie/claude-pod
 
 go 1.25.4
 
-require gopkg.in/yaml.v3 v3.0.1 // indirect
+require (
+	github.com/google/uuid v1.6.0
+	gopkg.in/yaml.v3 v3.0.1
+)
