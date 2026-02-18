@@ -9,9 +9,11 @@ agent:
   timeout: 30s
 
 channels:
-  - name: slack
-    type: websocket
-    auth: "${SLACK_BOT_TOKEN}"
+  - name: dummy
+    type: dummy
+  - name: grafana
+    type: grafana
+    auth: ""
 
 skills:
   dirs:
