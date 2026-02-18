@@ -1,7 +1,0 @@
-{
-  "backend": "dolt",
-  "database": "dolt",
-  "dolt_database": "claudepod",
-  "dolt_mode": "server",
-  "jsonl_export": "issues.jsonl"
-}
