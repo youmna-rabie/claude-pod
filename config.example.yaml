@@ -1,9 +1,27 @@
 # claude-pod gateway configuration
 
-gateway:
+server:
   host: "0.0.0.0"
   port: 8080
 
-log:
+agent:
+  url: "http://localhost:3000"
+  timeout: 30s
+
+channels:
+  - name: slack
+    type: websocket
+    auth: "${SLACK_BOT_TOKEN}"
+
+skills:
+  dirs:
+    - "./skills"
+  allowlist: []
+
+store:
+  type: memory
+  capacity: 1000
+
+logging:
   level: "info"
   format: "json"
