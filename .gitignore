@@ -1,4 +1,5 @@
 .runtime/
+.beads/
 .claude/commands/
 .logs/
 bin/
